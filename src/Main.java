@@ -22,5 +22,7 @@ public class Main {
         System.out.println("calcul b - restul impartirii: " + ((55+9) % 9));
         System.out.println("calcul c: " + (20 + -3*5 / 8));
         System.out.println("calcul d: " + (5 + 15 / 3 * 2 - 8 % 3));
+
+
     }
 }
