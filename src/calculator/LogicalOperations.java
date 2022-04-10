@@ -105,4 +105,89 @@ public class LogicalOperations {
             return thirdNumber;
         }
     }
+
+    public void displayNumbersFromGivenNumbersTo100 (int givenNumber){
+        if (givenNumber <= 100) {
+            for(int i=givenNumber; i<=100; i++)
+            System.out.println(i);
+        }
+    }
+
+
+    public void displayNumbersFromGivenNumbers2ToNeg100 (int givenNumber2){
+        if (givenNumber2 >= -100) {
+            for(int i=givenNumber2; i>=-100; i--)
+                System.out.println(i);
+        }
+    }
+
+    public void firstNumberToSecondNumber (int first, int second){
+        for (int i=first; i <= second; i++){
+            System.out.println(i);
+        }
+    }
+
+    public void lowerToHigher (int first, int second) {
+        if (first < second) {
+            for (int i = first; i <= second; i++) {
+                System.out.println(i);
+            }
+        } else {
+            for (int i = second; i <= first; i++) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    public void biggestToSmallest (int biggest, int smallest){
+        for (int i=biggest; i >= smallest; i--){
+            System.out.println(i);
+        }
+    }
+
+    public void displayEvenNumbers (int x, int y){
+        for(int i=x; i <=y; i++){
+            if (i % 2 == 0){
+                System.out.println(i);
+            }
+        }
+    }
+
+    public void displayOddNumbers (int x, int y){
+        for(int i=x; i <=y; i++){
+            if (i % 2 != 0){
+                System.out.println(i);
+            }
+        }
+    }
+
+    public int sumOfConsecutiveNumbers (int x){
+        int sum = 0;
+        for(int i=x; i<= 100; i++){
+            sum = sum + i;
+        }
+        return sum;
+    }
+
+    public double averageOfConsecutiveNumbers (int x){
+        double sum = 0;
+        int counter = 0;
+        double average;
+        for(int i=x; i <= 100; i++){
+            sum = sum + i;
+            counter++;
+        }
+        return sum/counter;
+    }
+
+    public void displayModel (int numberOfSymbols){
+        int localNumberOfSymbols = numberOfSymbols;
+        for(int i=1; i <= numberOfSymbols; i++){
+            for (int j=1; j <= localNumberOfSymbols; j++){
+                System.out.print("*");
+            }
+            System.out.println("");
+            localNumberOfSymbols--;
+        }
+    }
 }
