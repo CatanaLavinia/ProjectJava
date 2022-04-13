@@ -190,4 +190,93 @@ public class LogicalOperations {
             localNumberOfSymbols--;
         }
     }
+
+    public void displayNumbersFromGivenNumbersTo100WithWhileLoop (int givenNumber){
+        int i = givenNumber;
+        if (i <= 100) {
+            while (i <= 100) {
+                System.out.println(i);
+                i++;
+            }
+        }
+    }
+
+    public void displayNumbersFromGivenNumbersToNeg100WithWhileLoop (int givenNumber){
+        int i = givenNumber;
+        if (i >= -100) {
+            while (i >= -100) {
+                System.out.println(i);
+                i--;
+            }
+        }
+    }
+
+    public void firstNumberToSecondNumberWithWhileLoop (int first, int second){
+        while (first <= second){
+            System.out.println(first);
+            first++;
+        }
+    }
+
+    public void lowerToHigherWithWhileLoop (int first, int second){
+        if (first < second){
+            while (first <= second){
+                System.out.println(first);
+                first++;
+            }
+        } else {
+            while (first >= second){
+                System.out.println(second);
+                second++;
+            }
+        }
+    }
+
+    public void displayEvenNumbersWithWhileLoop (int x, int y){
+        while (x <= y){
+            if (x % 2 == 0){
+                System.out.println(x);
+            }
+            x++;
+        }
+    }
+
+    public void displayOddNumbersWithWhileLoop (int x, int y){
+        while (x <= y){
+            if (x % 2 != 0){
+                System.out.println(x);
+            }
+            x++;
+        }
+    }
+
+    public void sumAndAverageForGivenInterval (int x, int y){
+        int sum = 0;
+        int counter = 0;
+       double average;
+       while (x <= y){
+           sum = sum + x;
+           counter++;
+           x++;
+       }
+       average = (float)sum/counter;
+        System.out.println("Suma este: " +sum);
+        System.out.println("Media este: " +average);
+    }
+
+    public double displayAverageForNumbersDivisibleBy7 (int x, int y){
+       int sum = 0;
+       int counter = 0;
+       double average = 0;
+        while (x <= y){
+         if (x % 7 == 0){
+             sum = sum + x;
+             counter++;
+         }
+         x++;
+        }
+        average = (float)sum/counter;
+        return average;
+    }
+
 }
