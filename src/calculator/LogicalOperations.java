@@ -1,5 +1,8 @@
 package calculator;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LogicalOperations {
 
     public int getMax(int first, int second) {
@@ -373,4 +376,56 @@ public class LogicalOperations {
         return outputArray;
     }
 
+    public List<Integer> createListFromGivenNumber (int givenNumber){
+        List<Integer> myList = new ArrayList<>();
+        for (int i=0; i<givenNumber; i++){
+            myList.add(i+1);
+        }
+        return myList;
+    }
+
+    public void addNewElementToList (List<Integer> myList, int newElement){
+        myList.add(newElement);
+        System.out.println(myList);
+    }
+
+    public void displayListReverseOrder (List<Integer> myList){
+        for(int i=myList.size()-1; i>=0; i--){
+            System.out.println(myList.get(i));
+        }
+    }
+
+    public List<String> createListOfStrings (int numberOfElements){
+        List<String > myStringList = new ArrayList<>();
+        for(int i=1; i<= numberOfElements; i++){
+            myStringList.add("elev " + i);
+        }
+        System.out.println(myStringList);
+        return myStringList;
+    }
+    public void replaceListElement (List<String> myStringList, int positionToChange, String newString){
+        myStringList.set(positionToChange-1,newString);
+        System.out.println(myStringList);
+    }
+
+    public void addElementonFirstPosition (List<Integer> myList, int newValueToAdd){
+        myList.add(0,newValueToAdd);
+        System.out.println(myList);
+    }
+
+    public void printPositionElementInList (List<Integer> myList){
+        for (int i=0; i<myList.size(); i++){
+            System.out.println("Pe pozitia " + i + " valoarea elementului este " + myList.get(i));
+        }
+    }
+
+    public int printBiggestNumber (List<Integer> myList){
+        int biggestNumber = myList.get(0);
+        for (int i=1; i< myList.size(); i++){
+            if (myList.get(i)>biggestNumber){
+                biggestNumber = myList.get(i);
+            }
+        }
+        return biggestNumber;
+    }
 }
