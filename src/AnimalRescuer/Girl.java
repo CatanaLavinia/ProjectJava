@@ -2,8 +2,25 @@ package AnimalRescuer;
 
 public class Girl {
 
-    String name = "Lavinia";
-    int dogAgeWhenAdopted = 4;
+    private String name;
+    private int dogAgeWhenAdopted;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getDogAgeWhenAdopted() {
+        return dogAgeWhenAdopted;
+    }
+
+    public void setDogAgeWhenAdopted(int dogAgeWhenAdopted) {
+        this.dogAgeWhenAdopted = dogAgeWhenAdopted;
+    }
+
 
     public void feeding() {
         System.out.println("Feed the dog");
